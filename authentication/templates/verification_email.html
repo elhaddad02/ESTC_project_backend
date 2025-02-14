@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers France Succes</title>
+    <style>
+        /* Styles Généraux */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Barlow
+            ;
+            text-align: center;
+        }
+
+        /* Conteneur Principal */
+        .verification-account {
+            width: 100%;
+            max-width: 560px;
+            margin: 0 auto;
+            background: url('https://github.com/Souleymane-ndiaye/images/blob/main/bg2.png?raw=true');
+
+            padding: 30px;
+        }
+
+        /* Boîte de contenu */
+        .content-box {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            border: 2px solid white;
+            padding: 20px 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-top {
+            padding: 30px;
+            width: 350px;
+        }
+
+        /* Texte de bienvenue */
+        .welcome-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .expert-text {
+            font-weight: bold;
+        }
+
+        /* Contenu du message */
+        .message {
+            font-size: 12px;
+            color: #000;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        /* Bouton */
+        .btn {
+            background: linear-gradient(113.18deg, #015192 0%, #00a5bc 100%);
+            border-radius: 100.83px;
+            padding: 10px 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #015192;
+        }
+        a {
+            color:rgb(12, 12, 12);
+            text-decoration: none;
+        }
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+       
+
+        .btn svg {
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        /* Styles pour les paragraphes */
+        p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* Styles pour les icônes sociales */
+        .name-text {
+            color : #F99685;
+
+    
+        }
+
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+
+        .social img {
+            width: 30px;
+            height: 30px;
+            
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+        <!-- Outlook Background Fix -->
+        <!--[if gte mso 9]>
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:700px; height:1500px;">
+            <v:fill type="frame" src="https://res.cloudinary.com/dxjmr9een/image/upload/v1738829172/fc2gjpywkvb82frsfwyb.png" color="#ffffff"/>
+            <v:textbox inset="0,0,0,0">
+        <![endif]-->
+    
+        <!-- Utilisation d'un tableau pour la compatibilité avec Gmail -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td align="center">
+    
+                    <table class="verification-account" width="600px" cellpadding="0" cellspacing="0" border="0" style="background: url('https://res.cloudinary.com/dxjmr9een/image/upload/v1738829172/fc2gjpywkvb82frsfwyb.png') no-repeat center center; background-size: cover; padding: 20px; text-align: center;">
+    
+                        <!-- Section supérieure -->
+                        <tr>
+                            <td align="center">
+                                <div class="content-top">
+                                    <p>
+                                        <img src="https://github.com/Souleymane-ndiaye/images/blob/main/logo-ufs.png?raw=true" alt="Logo Univers France Succes" width="150" />
+                                    </p>
+                                    <p>
+                                        <img src="https://github.com/Souleymane-ndiaye/images/blob/main/user.png?raw=true" alt="User Icon" width="80" />
+                                    </p>
+                                    <p align="center" class="welcome-text">
+                                        Hi <span class="name-text"> {{ user.first_name }} </span>,<br/>
+                                        Your Univers France Succes account has been approved!
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <!-- Section principale -->
+                        <tr>
+                            <td align="center">
+                                <div class="content-box">
+                                    <p>Hi {{ user.first_name }},</p>
+    
+                                    <p>
+                                        Welcome to Univers France Succes, where we make your international study dreams come true! 
+                                        To start receiving exclusive resources, guides, and updates, please confirm your subscription by clicking below:
+                                    </p>
+    
+                                    <a href="{{ verification_url }}" style="display: inline-block; padding: 12px 54px; background-color: #1D72B8; color: white; text-decoration: none; font-size: 16px; border-radius: 265px;">
+                                        Get started
+                                        <img src="https://github.com/Souleymane-ndiaye/images/blob/main/icon.png?raw=true" alt="User Icon" width="16" />
+                                    </a>
+    
+                                    <p>
+                                        <br />
+                                        Here’s what you can expect:
+                                        <p class="expert-text">
+                                        ✔ Expert assistance with flight tickets and hotel bookings<br />
+                                        ✔ Recommendations for local events and guides<br />
+                                        ✔ Support from a trusted community of 10k+ students<br /><br />
+                                        </p>
+                                        Let us help you stay on top of your plans and make the most of your study experience abroad.<br />
+                                        If you didn’t sign up, feel free to ignore this email.<br /><br />
+                                        Looking forward to being part of your success!<br /><br />
+                                        Warm regards,<br /><br />
+                                        The Univers France Succes Team 
+                                    </p>
+                                    <hr />
+    
+                                    <p>
+                                        If you encounter any issues or have questions, our support team is here to help.<br />
+                                        Simply reply to this email or reach out to us at:<br />
+                                        <p style="color:black; font-weight: bold;">
+                                        📞 310-437-2766<br />
+                                        ✉️ support@universfrancesucces.com<br />
+                                        🌐 www.universfrancesucces.com<br /><br />
+                                        </p>
+                                        Stay connected with us on social media:
+                                    </p>
+    
+                                    <p >
+                                        <a href="#"><img src="https://github.com/Souleymane-ndiaye/images/blob/main/instagram.png?raw=true" alt="Instagram" width="30"></a>
+                                        <a href="#"><img src="https://github.com/Souleymane-ndiaye/images/blob/main/facebook.png?raw=true" alt="Facebook" width="30"></a>
+                                        <a href="#"><img src="https://github.com/Souleymane-ndiaye/images/blob/main/youtube.png?raw=true" alt="YouTube" width="30"></a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </td>
+            </tr>
+        </table>
+    
+        <!-- Outlook Fix End -->
+        <!--[if gte mso 9]>
+            </v:textbox>
+        </v:rect>
+        <![endif]-->
+    
+    </body>
+</html>
